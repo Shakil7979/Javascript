@@ -9,7 +9,7 @@ alert() // alert a show korar jnno
 
 
 // Data type
-typeof() // datar type show korar jnno use kora hoy
+typeOf() // datar type show korar jnno use kora hoy
 
 // data type change korar jnno 
 number('shakil') // string theke number a convert kora jay
@@ -22,3 +22,13 @@ toPrecision(2)  // 2.564 total 2 ta string show korbe ex: 2.5
 
 prompt()  // input alert show korbe
 value.length   // cherector length show korbe
+
+cahrAt(2)  // Bangladesh charactor er 2 number string show korbe
+value.toUpperCase() // value ta k UPPERCASE a convert korbe
+value.toLowerCase()  // value ta lowercase a convert korbe
+concet()  // akadhik data k aksathe kora , jog kora 
+slice(0, 3)   // slice mane kete newa. Bangladesh word er 0 theke 3 porjunto data show korbe. baki gula kete jabe
+
+//******* Operator 
++, -, *, /, %  /// Arithmatic operator x + y
++= , -=, *=, /=, %= /// Assignment operator x += y / x = s + y

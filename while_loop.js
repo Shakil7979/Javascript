@@ -1,3 +1,12 @@
+var x = 1;
+while (x <= 10) {
+  document.write(" " + x);
+  x = x + 1;
+}
+
+
+
+
 // 1 theke 100 porjunto 3 and 5 dara vag korle vag fol sunno hobe sei sonkkha gulo ber koro
 
 var x = 1;

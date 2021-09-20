@@ -31,4 +31,4 @@ slice(0, 3)   // slice mane kete newa. Bangladesh word er 0 theke 3 porjunto dat
 
 //******* Operator 
 +, -, *, /, %  /// Arithmatic operator x + y
-+= , -=, *=, /=, %= /// Assignment operator x += y / x = s + y
++= , -=, *=, /=, %= /// Assignment operator x += y / x = x + y

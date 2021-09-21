@@ -8,3 +8,6 @@ var z = 20;
 
 var result = x > y ? "X boro" : y > z ? "y boro" : "z boro";
 document.write(result);
+
+
+

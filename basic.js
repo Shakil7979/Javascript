@@ -34,6 +34,7 @@ pop() // array er moddhe last er value delete korbe
 unshift()  // array er moddhe first e value add korbe
 shift() //array er moddhe first er value remove korbe
 splice(2,0," ","") // array er moddhe index dhore value add kora jay
+reverse() // Number array k reverse kore 
 
 
 //******* Operator 

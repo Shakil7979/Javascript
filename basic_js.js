@@ -29,6 +29,16 @@ value.toLowerCase()  // value ta lowercase a convert korbe
 concet()  // akadhik data k aksathe kora , jog kora 
 slice(0, 3)   // slice mane kete newa. Bangladesh word er 0 theke 3 porjunto data show korbe. baki gula kete jabe
 
+push() // array er moddhe last er value add korbe
+pop() // array er moddhe last er value delete korbe 
+unshift()  // array er moddhe first e value add korbe
+shift() //array er moddhe first er value remove korbe
+splice(2,0," ","") // array er moddhe index dhore value add kora jay
+
+
 //******* Operator 
 +, -, *, /, %  /// Arithmatic operator x + y
 += , -=, *=, /=, %= /// Assignment operator x += y / x = x + y
+
+
+

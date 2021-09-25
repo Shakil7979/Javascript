@@ -41,5 +41,15 @@ reverse() // Number array k reverse kore
 +, -, *, /, %  /// Arithmatic operator x + y
 += , -=, *=, /=, %= /// Assignment operator x += y / x = x + y
 
+addEventListener("click",function())  // listener er dia kono tag er style change kora jabe.. ba kono akta kaj kora jabe. ("click/mouseover", function name without ()). 
+
+
+
+
+
+
+
+
+
 
 

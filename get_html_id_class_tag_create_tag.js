@@ -4,6 +4,8 @@
 getElementById() // HTML id get korar jnno 
 getElementsByClassName()  // HTML class get korar jnno
 getElementsByTagName()  // HTML tag name get korar jnno
+querySelector() // j kono tag class id nia kaj kora jabe
+querySelectorAll()  // akoi multiple class get kora jabe
 
 // **CREATE ELEMENT IN HTML
 createElement()  // create HTML tag element

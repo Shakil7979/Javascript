@@ -44,7 +44,9 @@ reverse() // Number array k reverse kore
 addEventListener("click",function())  // listener er dia kono tag er style change kora jabe.. ba kono akta kaj kora jabe. ("click/mouseover", function name without ()). 
 
 
-
+string.startsWith("today"); 
+string.endsWith("friday"); 
+string.includes("today");
 
 
 

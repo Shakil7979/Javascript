@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .light_area {
+        display: flex;
+      }
+      .red {
+        background: red;
+      }
+      .green {
+        background: green;
+      }
+      #green_light {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 5px;
+      }
+      #red_light {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="light_area">
+      <p id="green_light"></p>
+      <p id="red_light"></p>
+    </div>
+
+    <script>
+      var greenLight = document.getElementById("green_light");
+      var redLight = document.getElementById("red_light");
+
+      var date = new Date();
+      var month = date.getMonth() + 1;
+      var day = date.getDate();
+      var year = date.getFullYear();
+      var todayHour = date.getHours();
+      var todayMiniute = date.getMinutes();
+      var newdate = `${month}/${day}/${year}`;
+      var dateStr = newdate;
+      var days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      var d = new Date(dateStr);
+      var dayName = days[d.getDay()];
+      if (dayName == "Friday") {
+        redLight.classList.add("red");
+      } else {
+        if (todayHour >= 9 && todayHour <= 18) {
+          greenLight.classList.add("green");
+        } else {
+          redLight.classList.add("red");
+        }
+      }
+    </script>
+  </body>
+</html>

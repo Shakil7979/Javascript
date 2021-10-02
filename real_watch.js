@@ -1,23 +1,32 @@
 
-
 setInterval(timeSet, 1000);
 
 function timeSet() {
-  var hour = document.getElementById("hour");
-  var minute = document.getElementById("minute");
-  var second = document.getElementById("second");
+  var getHour = document.getElementById("hour");
+  var getMinute = document.getElementById("minute");
+  var getSecond = document.getElementById("second");
 
   var date = new Date();
-  var todayHour = date.getHours();
-  var todayMiniute = date.getMinutes();
-  var todaySecond = date.getSeconds();
+  var hour = date.getHours();
+  var miniute = date.getMinutes();
+  var second = date.getSeconds();
+  am_pm = "AM";
 
-  hour.innerHTML = `${todayHour} : `;
-  minute.innerHTML = ` ${todayMiniute} : `;
-  second.innerHTML = todaySecond;
+  getHour.innerHTML = `${hour} : `;
+  getMinute.innerHTML = ` ${miniute} : `;
+  getSecond.innerHTML = `${second} ${am_pm}`;
+  if (hour > 12) {
+    hour -= 12;
+    am_pm = "PM";
+  }
+  if (hour == 0) {
+    hr = 12;
+    am_pm = "AM";
+  }
 }
 
 timeSet();
+
 
 
 

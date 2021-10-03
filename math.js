@@ -10,5 +10,5 @@ Math.max(0,12) // maximum number ber korbe
 Math.random() * 7 // random 0 theke 1 er moddhe random korbe.. kokhono 1 hbe na. and 7 er sathe gun hobe kintu 7 hbe na 
 Math.floor(Math.random() * 10)+1; // 10 theke 20 porjunto random number create
 
-
+toFixed(2) // decimal sonkha 2 ta show korbe 
 

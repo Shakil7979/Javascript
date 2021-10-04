@@ -5,20 +5,26 @@
 // যদি সংখ্যাটি মৌলিক হয়, সংখ্যাটি ফেরত দিন
 // যদি না হয়, পরবর্তী উচ্চতর মৌলিক সংখ্যাটি ফেরত দিন
 
-function myFunction(x) {
-  var number = x;
-  var isPrime = number;
-
-  if (number > 1) {
-    for (let i = 2; i < number; i++) {
-      if (number % i == 0) {
-        var nextPrime = number + 1;
-        return nextPrime;
-      } else {
-        return isPrime;
-      }
+const num = 104;
+const isPrime = (num) => {
+  let sqrtnum = Math.floor(Math.sqrt(num));
+  let prime = num !== 1;
+  for (let i = 2; i < sqrtnum + 1; i++) {
+    if (num % i === 0) {
+      prime = false;
+      break;
     }
   }
+  return prime;
+};
+const nextPrime = (num = 1) => {
+  while (!isPrime(++num)) {}
+  return num;
+}; 
+
+if (isPrime(num) != true) {
+  console.log(nextPrime(num));
+} else {
+  console.log(num);
 }
-console.log(myFunction(12));
 
